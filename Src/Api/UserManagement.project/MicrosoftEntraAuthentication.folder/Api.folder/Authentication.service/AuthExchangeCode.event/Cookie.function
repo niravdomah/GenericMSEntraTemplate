@@ -11,9 +11,8 @@
       "Type": "Compiled:String?",
       "ValueUsage": "RuntimeRead",
       "Value": {
-        "Expression": "\"session=\" + CreateSessionToken +\"; Path=/;; HttpOnly; SameSite=Strict; Expires=\" + $.System.CurrentDateTime.AddMinutes($.Settings.SessionExpiryMinutes).ToUniversalTime().ToString(\"ddd, dd MMM yyyy HH:mm:ss 'GMT'\")",
-        "CompiledExpression": "=\"session=\"+{2}+\"; Path=/;; HttpOnly; SameSite=Strict; Expires=\"+{1}.AddMinutes({0}).ToUniversalTime().ToString(\"ddd, dd MMM yyyy HH:mm:ss 'GMT'\")",
-        "Type": "Compiled:String?"
+        "Expression": "\"session=\" + CreateSessionToken +\"; Path=/; HttpOnly; SameSite=Strict; Expires=\" + $.System.CurrentDateTime.AddMinutes($.Settings.SessionExpiryMinutes).ToUniversalTime().ToString(\"ddd, dd MMM yyyy HH:mm:ss 'GMT'\")",
+        "CompiledExpression": "=\"session=\" + {2} +\"; Path=/; HttpOnly; SameSite=Strict; Expires=\" + {1}.AddMinutes({0}).ToUniversalTime().ToString(\"ddd, dd MMM yyyy HH:mm:ss 'GMT'\")"
       },
       "ValueType": "Linx.CSharpExpression?"
     }
