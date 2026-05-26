@@ -1,0 +1,36 @@
+{
+  "Id": "3lD0",
+  "Name": "AuthToken",
+  "Properties": [
+    {
+      "Id": "wHOZ",
+      "Name": "access_token",
+      "Type": "Compiled:String?"
+    },
+    {
+      "Id": "jlgk",
+      "Name": "scope",
+      "Type": "Compiled:String?"
+    },
+    {
+      "Id": "rjdy",
+      "Name": "token_type",
+      "Type": "Compiled:String?"
+    },
+    {
+      "Id": "0N17",
+      "Name": "expires_in",
+      "Type": "Compiled:String?"
+    },
+    {
+      "Id": "fIkH",
+      "Name": "id_token",
+      "Type": "Compiled:String?"
+    },
+    {
+      "Id": "1guK",
+      "Name": "refresh_token",
+      "Type": "Compiled:String?"
+    }
+  ]
+}

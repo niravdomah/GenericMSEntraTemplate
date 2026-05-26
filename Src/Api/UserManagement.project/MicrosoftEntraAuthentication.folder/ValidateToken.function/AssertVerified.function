@@ -1,0 +1,27 @@
+{
+  "Properties": [
+    {
+      "Id": "Assertion",
+      "Type": "Compiled:Twenty57.Linx.Plugins.Utilities.Shared.Assert.AssertionType, Twenty57.Linx.Plugins.Utilities.Shared?",
+      "ValueUsage": "DesignTime",
+      "Value": "IsTrue"
+    },
+    {
+      "Id": "Condition",
+      "Type": "Compiled:Boolean",
+      "ValueUsage": "RuntimeRead",
+      "Value": {
+        "Expression": "VerifyJWT.Verified",
+        "CompiledExpression": "={0}",
+        "Type": "Compiled:Boolean"
+      },
+      "ValueType": "Linx.CSharpExpression?"
+    },
+    {
+      "Id": "Message",
+      "Type": "Compiled:String?",
+      "ValueUsage": "RuntimeRead",
+      "Value": "Token not verified"
+    }
+  ]
+}

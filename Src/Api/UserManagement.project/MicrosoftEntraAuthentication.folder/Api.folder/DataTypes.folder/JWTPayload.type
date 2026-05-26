@@ -1,0 +1,76 @@
+{
+  "Id": "4CsL",
+  "Name": "JWTPayload",
+  "Properties": [
+    {
+      "Id": "62Op",
+      "Name": "nickname",
+      "Type": "Compiled:String?"
+    },
+    {
+      "Id": "E0FN",
+      "Name": "name",
+      "Type": "Compiled:String?"
+    },
+    {
+      "Id": "GXVu",
+      "Name": "picture",
+      "Type": "Compiled:String?"
+    },
+    {
+      "Id": "spT9",
+      "Name": "updated_at",
+      "Type": "Compiled:DateTime"
+    },
+    {
+      "Id": "K7wZ",
+      "Name": "email",
+      "Type": "Compiled:String?"
+    },
+    {
+      "Id": "KdTf",
+      "Name": "email_verified",
+      "Type": "Compiled:Boolean"
+    },
+    {
+      "Id": "22Tk",
+      "Name": "iss",
+      "Type": "Compiled:String?"
+    },
+    {
+      "Id": "BBTG",
+      "Name": "sub",
+      "Type": "Compiled:String?"
+    },
+    {
+      "Id": "DDnZ",
+      "Name": "aud",
+      "Type": "Compiled:String?"
+    },
+    {
+      "Id": "SaWV",
+      "Name": "iat",
+      "Type": "Compiled:Int64"
+    },
+    {
+      "Id": "oTKl",
+      "Name": "exp",
+      "Type": "Compiled:Int64"
+    },
+    {
+      "Id": "ykYO",
+      "Name": "sid",
+      "Type": "Compiled:String?"
+    },
+    {
+      "Id": "CpX9",
+      "Name": "given_name",
+      "Type": "Compiled:String?"
+    },
+    {
+      "Id": "L8UF",
+      "Name": "family_name",
+      "Type": "Compiled:String?"
+    }
+  ]
+}

@@ -1,0 +1,302 @@
+[
+  {
+    "Type": "Generated",
+    "Value": {
+      "Id": "C_VDAN.Operations.AuthExchangeCode.Result",
+      "Properties": [
+        {
+          "Id": "HttpContext",
+          "Name": "HttpContext",
+          "Type": "Compiled:Twenty57.Linx.Plugins.Rest.Shared.OpenAPIWebService.OpenAPI.Data.Out.HttpContext, Twenty57.Linx.Plugins.Rest.Shared?",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "Response200",
+          "Name": "Response200",
+          "Type": "Generated:C_VDAN.Schema.DefaultResponse?",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "Response500",
+          "Name": "Response500",
+          "Type": "Generated:C_VDAN.Schema.DefaultResponse?",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "ResponseXXX",
+          "Name": "ResponseXXX",
+          "Type": "Compiled:Object?",
+          "Access": "ReadWrite"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "Generated",
+    "Value": {
+      "Id": "C_VDAN.Operations.AuthLogin.Result",
+      "Properties": [
+        {
+          "Id": "HttpContext",
+          "Name": "HttpContext",
+          "Type": "Compiled:Twenty57.Linx.Plugins.Rest.Shared.OpenAPIWebService.OpenAPI.Data.Out.HttpContext, Twenty57.Linx.Plugins.Rest.Shared?",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "Response500",
+          "Name": "Response500",
+          "Type": "Generated:C_VDAN.Schema.DefaultResponse?",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "ResponseXXX",
+          "Name": "ResponseXXX",
+          "Type": "Compiled:Object?",
+          "Access": "ReadWrite"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "Generated",
+    "Value": {
+      "Id": "C_VDAN.Operations.AuthLogout.Result",
+      "Properties": [
+        {
+          "Id": "HttpContext",
+          "Name": "HttpContext",
+          "Type": "Compiled:Twenty57.Linx.Plugins.Rest.Shared.OpenAPIWebService.OpenAPI.Data.Out.HttpContext, Twenty57.Linx.Plugins.Rest.Shared?",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "Response200",
+          "Name": "Response200",
+          "Type": "Generated:C_VDAN.Schema.DefaultResponse?",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "Response500",
+          "Name": "Response500",
+          "Type": "Generated:C_VDAN.Schema.DefaultResponse?",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "ResponseXXX",
+          "Name": "ResponseXXX",
+          "Type": "Compiled:Object?",
+          "Access": "ReadWrite"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "Generated",
+    "Value": {
+      "Id": "C_VDAN.Operations.AuthUserInfoGet.Result",
+      "Properties": [
+        {
+          "Id": "HttpContext",
+          "Name": "HttpContext",
+          "Type": "Compiled:Twenty57.Linx.Plugins.Rest.Shared.OpenAPIWebService.OpenAPI.Data.Out.HttpContext, Twenty57.Linx.Plugins.Rest.Shared?",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "Response200",
+          "Name": "Response200",
+          "Type": "Generated:C_VDAN.Schema.UserInfoRead?",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "Response500",
+          "Name": "Response500",
+          "Type": "Generated:C_VDAN.Schema.DefaultResponse?",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "ResponseXXX",
+          "Name": "ResponseXXX",
+          "Type": "Compiled:Object?",
+          "Access": "ReadWrite"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "Generated",
+    "Value": {
+      "Id": "C_VDAN.Operations.HealthGet.Result",
+      "Properties": [
+        {
+          "Id": "HttpContext",
+          "Name": "HttpContext",
+          "Type": "Compiled:Twenty57.Linx.Plugins.Rest.Shared.OpenAPIWebService.OpenAPI.Data.Out.HttpContext, Twenty57.Linx.Plugins.Rest.Shared?",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "Response500",
+          "Name": "Response500",
+          "Type": "Generated:C_VDAN.Schema.DefaultResponse?",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "ResponseXXX",
+          "Name": "ResponseXXX",
+          "Type": "Compiled:Object?",
+          "Access": "ReadWrite"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "Generated",
+    "Value": {
+      "Id": "C_VDAN.Schema.DefaultResponse",
+      "Properties": [
+        {
+          "Id": "Id",
+          "Name": "Id",
+          "Type": "Compiled:Int32",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "Messages",
+          "Name": "Messages",
+          "Type": "List:?Compiled:String?",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "MessageType",
+          "Name": "MessageType",
+          "Type": "Compiled:String?",
+          "Access": "ReadWrite"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "Generated",
+    "Value": {
+      "Id": "C_VDAN.Schema.PageRead",
+      "Properties": [
+        {
+          "Id": "Id",
+          "Name": "Id",
+          "Type": "Compiled:Int32",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "Name",
+          "Name": "Name",
+          "Type": "Compiled:String?",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "Route",
+          "Name": "Route",
+          "Type": "Compiled:String?",
+          "Access": "ReadWrite"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "Generated",
+    "Value": {
+      "Id": "C_VDAN.Schema.RoleRead",
+      "Properties": [
+        {
+          "Id": "Id",
+          "Name": "Id",
+          "Type": "Compiled:Int32",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "LastChangedDate",
+          "Name": "LastChangedDate",
+          "Type": "Compiled:String?",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "LastChangedUser",
+          "Name": "LastChangedUser",
+          "Type": "Compiled:String?",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "Name",
+          "Name": "Name",
+          "Type": "Compiled:String?",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "Pages",
+          "Name": "Pages",
+          "Type": "List:?Generated:C_VDAN.Schema.PageRead?",
+          "Access": "ReadWrite"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "Generated",
+    "Value": {
+      "Id": "C_VDAN.Schema.UserInfoRead",
+      "Properties": [
+        {
+          "Id": "Email",
+          "Name": "Email",
+          "Type": "Compiled:String?",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "FirstName",
+          "Name": "FirstName",
+          "Type": "Compiled:String?",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "Id",
+          "Name": "Id",
+          "Type": "Compiled:Int32",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "LastChangedDate",
+          "Name": "LastChangedDate",
+          "Type": "Compiled:String?",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "LastChangedUser",
+          "Name": "LastChangedUser",
+          "Type": "Compiled:String?",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "LastName",
+          "Name": "LastName",
+          "Type": "Compiled:String?",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "Pages",
+          "Name": "Pages",
+          "Type": "List:?Generated:C_VDAN.Schema.PageRead?",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "Roles",
+          "Name": "Roles",
+          "Type": "List:?Generated:C_VDAN.Schema.RoleRead?",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "RolesString",
+          "Name": "RolesString",
+          "Type": "Compiled:String?",
+          "Access": "ReadWrite"
+        }
+      ]
+    }
+  }
+]

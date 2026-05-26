@@ -1,0 +1,11 @@
+{
+  "Id": "6LeU",
+  "Name": "JSONWebKeySet",
+  "Properties": [
+    {
+      "Id": "9iDn",
+      "Name": "keys",
+      "Type": "List:?Custom:QlSx?"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "Id": "Oxji",
+  "Name": "JWTHeader",
+  "Properties": [
+    {
+      "Id": "RYNb",
+      "Name": "alg",
+      "Type": "Compiled:String?"
+    },
+    {
+      "Id": "Vqa7",
+      "Name": "kid",
+      "Type": "Compiled:String?"
+    }
+  ]
+}

@@ -1,0 +1,102 @@
+{
+  "Properties": [
+    {
+      "Id": "Connection type",
+      "Type": "Compiled:Twenty57.Linx.Plugins.Database.Shared.Common.Sql.DesignerConnectionType, Twenty57.Linx.Plugins.Database.Shared?",
+      "ValueUsage": "DesignTime",
+      "Value": "UseTransaction"
+    },
+    {
+      "Id": "Expression0",
+      "Type": "Compiled:Object?",
+      "ValueUsage": "RuntimeRead",
+      "Value": {
+        "Expression": "$.Parameters.body.Email",
+        "CompiledExpression": "={0}",
+        "Type": "Compiled:String?"
+      },
+      "ValueType": "Linx.CSharpExpression?"
+    },
+    {
+      "Id": "Expression1",
+      "Type": "Compiled:Object?",
+      "ValueUsage": "RuntimeRead",
+      "Value": {
+        "Expression": "$.Parameters.body.FirstName",
+        "CompiledExpression": "={0}",
+        "Type": "Compiled:String?"
+      },
+      "ValueType": "Linx.CSharpExpression?"
+    },
+    {
+      "Id": "Expression2",
+      "Type": "Compiled:Object?",
+      "ValueUsage": "RuntimeRead",
+      "Value": {
+        "Expression": "$.Parameters.body.LastName",
+        "CompiledExpression": "={0}",
+        "Type": "Compiled:String?"
+      },
+      "ValueType": "Linx.CSharpExpression?"
+    },
+    {
+      "Id": "Expression3",
+      "Type": "Compiled:Object?",
+      "ValueUsage": "RuntimeRead",
+      "Value": {
+        "Expression": "$.Parameters.LastChangedUser",
+        "CompiledExpression": "={0}",
+        "Type": "Compiled:String?"
+      },
+      "ValueType": "Linx.CSharpExpression?"
+    },
+    {
+      "Id": "Result type",
+      "Type": "Compiled:Twenty57.Linx.Plugins.Database.Shared.ExecuteSQL.ResultType, Twenty57.Linx.Plugins.Database.Shared?",
+      "ValueUsage": "DesignTime",
+      "Value": {
+        "CustomType": null,
+        "Fields": [
+          {
+            "ColumnName": "UserId",
+            "Name": "UserId",
+            "ColumnType": "Int32",
+            "TypeReference": "Compiled:Int64"
+          }
+        ],
+        "IsCustomType": true
+      }
+    },
+    {
+      "Id": "Return options",
+      "Type": "Compiled:Twenty57.Linx.Plugins.Database.Shared.ExecuteSQL.ReturnModeType, Twenty57.Linx.Plugins.Database.Shared?",
+      "ValueUsage": "DesignTime",
+      "Value": "FirstRow"
+    },
+    {
+      "Id": "SQL",
+      "Type": "Compiled:String?",
+      "ValueUsage": "RuntimeRead",
+      "Value": "INSERT INTO UserManagement.[User]\r\n(\r\n    Email,\r\n    FirstName,\r\n    LastName,\r\n    LastChangedUser\r\n)\r\nVALUES\r\n(\r\n    @{$.Parameters.body.Email},\r\n    @{$.Parameters.body.FirstName},\r\n    @{$.Parameters.body.LastName},\r\n    @{$.Parameters.LastChangedUser}\r\n);\r\n\r\nSELECT Id AS UserId\r\nFROM UserManagement.[User]\r\nWHERE Id = SCOPE_IDENTITY();"
+    },
+    {
+      "Id": "Timeout",
+      "Type": "Compiled:Int32",
+      "ValueUsage": "DesignTime",
+      "Value": 60
+    },
+    {
+      "Id": "Transaction",
+      "Type": "Compiled:Twenty57.Linx.Plugins.Database.Shared.Transaction, Twenty57.Linx.Plugins.Database.Shared?",
+      "ValueUsage": "RuntimeRead",
+      "Value": {
+        "Expression": "BeginTransaction.Transaction",
+        "CompiledExpression": "={0}",
+        "Type": "Compiled:Twenty57.Linx.Plugins.Database.Shared.Transaction, Twenty57.Linx.Plugins.Database.Shared?"
+      },
+      "ValueType": "Linx.CSharpExpression?"
+    }
+  ],
+  "Result": "Generated:T_oUEj?",
+  "Version": "3"
+}

@@ -1,0 +1,46 @@
+{
+  "Id": "QlSx",
+  "Name": "JSONWebKey",
+  "Properties": [
+    {
+      "Id": "1ELD",
+      "Name": "alg",
+      "Type": "Compiled:String?"
+    },
+    {
+      "Id": "gS4t",
+      "Name": "kty",
+      "Type": "Compiled:String?"
+    },
+    {
+      "Id": "mWj2",
+      "Name": "use",
+      "Type": "Compiled:String?"
+    },
+    {
+      "Id": "hbaw",
+      "Name": "n",
+      "Type": "Compiled:String?"
+    },
+    {
+      "Id": "ja0F",
+      "Name": "e",
+      "Type": "Compiled:String?"
+    },
+    {
+      "Id": "we8D",
+      "Name": "kid",
+      "Type": "Compiled:String?"
+    },
+    {
+      "Id": "FO1y",
+      "Name": "x5t",
+      "Type": "Compiled:String?"
+    },
+    {
+      "Id": "3lXh",
+      "Name": "x5c",
+      "Type": "List:?Compiled:String?"
+    }
+  ]
+}

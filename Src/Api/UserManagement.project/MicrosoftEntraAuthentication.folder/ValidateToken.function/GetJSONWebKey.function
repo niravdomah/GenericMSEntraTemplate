@@ -1,0 +1,39 @@
+{
+  "Properties": [
+    {
+      "Id": "eLlW",
+      "Type": "Compiled:String?",
+      "ValueUsage": "RuntimeRead",
+      "Value": {
+        "Expression": "GetKeyIdFromToken",
+        "CompiledExpression": "={0}",
+        "Type": "Compiled:String?"
+      },
+      "ValueType": "Linx.CSharpExpression?"
+    },
+    {
+      "Id": "ParameterNameMapping",
+      "Type": "Compiled:System.Collections.Generic.IDictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib?",
+      "ValueUsage": "DesignTime",
+      "Value": {
+        "eLlW": "KeyId"
+      },
+      "ValueType": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib?"
+    },
+    {
+      "Id": "Process",
+      "Type": "Compiled:Linx.IProcessReference?",
+      "ValueUsage": "DesignTime",
+      "Value": {
+        "Id": "cobX",
+        "Name": "MicrosoftEntraAuthentication.GetJSONWebKey",
+        "Parameters": "Generated:T_nF0v?",
+        "Result": "Custom:QlSx?",
+        "IsValid": true,
+        "QualifiedPath": "FL:MicrosoftEntraAuthentication→PC:GetJSONWebKey"
+      },
+      "ValueType": "Linx.ProcessReference?"
+    }
+  ],
+  "Result": "Custom:QlSx?"
+}

@@ -1,0 +1,33 @@
+{
+  "Properties": [
+    {
+      "Id": "Value",
+      "Type": "Generated:C_VDAN.Operations.AuthExchangeCode.Result?",
+      "ValueUsage": "RuntimeRead",
+      "Value": {
+        "ParsedExpression": "{\"HttpContext\":{\"StatusCode\":302, \"Headers\":[{\"Name\":\"Location\", \"Value\":[{\"LinxExpression\":\"[PARSED]\"}]}]}}",
+        "ExpressionPlaceholders": [
+          {
+            "typePath": [
+              "HttpContext",
+              "Headers",
+              "[]",
+              "Value",
+              "[]"
+            ],
+            "expression": {
+              "Expression": "$.Settings.ClientErrorUri",
+              "CompiledExpression": "={0}",
+              "Type": "Compiled:String?"
+            }
+          }
+        ]
+      },
+      "ValueType": "Linx.JsonExpression?"
+    }
+  ],
+  "RuntimeCharacteristics": {
+    "IsTerminating": true,
+    "ExecutionPathExecution": "ZeroOrMore"
+  }
+}

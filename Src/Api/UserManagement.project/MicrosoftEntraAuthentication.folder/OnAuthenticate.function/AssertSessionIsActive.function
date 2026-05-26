@@ -1,0 +1,38 @@
+{
+  "Properties": [
+    {
+      "Id": "Assertion",
+      "Type": "Compiled:Twenty57.Linx.Plugins.Utilities.Shared.Assert.AssertionType, Twenty57.Linx.Plugins.Utilities.Shared",
+      "ValueUsage": "DesignTime",
+      "Value": "LessOrEqual"
+    },
+    {
+      "Id": "Message",
+      "Type": "Compiled:String?",
+      "ValueUsage": "RuntimeRead",
+      "Value": ""
+    },
+    {
+      "Id": "X",
+      "Type": "Compiled:Object?",
+      "ValueUsage": "RuntimeRead",
+      "Value": {
+        "Expression": "$.System.CurrentDateTime.ToUniversalTime()",
+        "CompiledExpression": "={0}.ToUniversalTime()",
+        "Type": "Compiled:DateTime"
+      },
+      "ValueType": "Linx.CSharpExpression?"
+    },
+    {
+      "Id": "Y",
+      "Type": "Compiled:Object?",
+      "ValueUsage": "RuntimeRead",
+      "Value": {
+        "Expression": "GetSession.LastAccessDate.AddMinutes($.Settings.SessionExpiryMinutes)",
+        "CompiledExpression": "={1}.AddMinutes({0})",
+        "Type": "Compiled:DateTime"
+      },
+      "ValueType": "Linx.CSharpExpression?"
+    }
+  ]
+}

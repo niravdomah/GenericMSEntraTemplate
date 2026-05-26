@@ -1,0 +1,52 @@
+[
+  {
+    "Type": "Generated",
+    "Value": {
+      "Id": "T_uADN",
+      "Properties": [
+        {
+          "Id": "CreatedDate",
+          "Name": "CreatedDate",
+          "Type": "Compiled:DateTime",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "ExpiryDate",
+          "Name": "ExpiryDate",
+          "Type": "Compiled:DateTime",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "Id",
+          "Name": "Id",
+          "Type": "Compiled:Int64",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "IpAddress",
+          "Name": "IpAddress",
+          "Type": "Compiled:String?",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "LastAccessDate",
+          "Name": "LastAccessDate",
+          "Type": "Compiled:DateTime",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "Token",
+          "Name": "Token",
+          "Type": "Compiled:String?",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "UserId",
+          "Name": "UserId",
+          "Type": "Compiled:Int64",
+          "Access": "ReadWrite"
+        }
+      ]
+    }
+  }
+]

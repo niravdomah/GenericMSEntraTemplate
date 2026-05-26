@@ -1,0 +1,51 @@
+{
+  "Properties": [
+    {
+      "Id": "Algorithm",
+      "Type": "Compiled:Twenty57.Linx.Plugins.Cryptography.Shared.Jwt.Common.JwtAlgorithm, Twenty57.Linx.Plugins.Cryptography.Shared?",
+      "ValueUsage": "DesignTime",
+      "Value": "RS256"
+    },
+    {
+      "Id": "Exponent",
+      "Type": "Compiled:Twenty57.Linx.Plugins.Cryptography.Shared.Common.Binary, Twenty57.Linx.Plugins.Cryptography.Shared?",
+      "ValueUsage": "RuntimeRead",
+      "Value": {
+        "Expression": "ExponentToBase64",
+        "CompiledExpression": "={0}",
+        "Type": "Compiled:String?"
+      },
+      "ValueType": "Linx.CSharpExpression?"
+    },
+    {
+      "Id": "Modulus",
+      "Type": "Compiled:Twenty57.Linx.Plugins.Cryptography.Shared.Common.Binary, Twenty57.Linx.Plugins.Cryptography.Shared?",
+      "ValueUsage": "RuntimeRead",
+      "Value": {
+        "Expression": "ModulusToBase64",
+        "CompiledExpression": "={0}",
+        "Type": "Compiled:String?"
+      },
+      "ValueType": "Linx.CSharpExpression?"
+    },
+    {
+      "Id": "Token",
+      "Type": "Compiled:String?",
+      "ValueUsage": "RuntimeRead",
+      "Value": {
+        "Expression": "$.Parameters.Token",
+        "CompiledExpression": "={0}",
+        "Type": "Compiled:String?"
+      },
+      "ValueType": "Linx.CSharpExpression?"
+    },
+    {
+      "Id": "Validate using",
+      "Type": "Compiled:Twenty57.Linx.Plugins.Cryptography.Shared.Jwt.VerifyJwt.ValidationType, Twenty57.Linx.Plugins.Cryptography.Shared?",
+      "ValueUsage": "DesignTime",
+      "Value": "PublicKey"
+    }
+  ],
+  "Result": "Generated:MCvB?",
+  "Version": "1"
+}

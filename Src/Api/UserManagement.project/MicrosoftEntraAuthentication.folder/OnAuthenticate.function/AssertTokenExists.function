@@ -1,0 +1,27 @@
+{
+  "Properties": [
+    {
+      "Id": "Assertion",
+      "Type": "Compiled:Twenty57.Linx.Plugins.Utilities.Shared.Assert.AssertionType, Twenty57.Linx.Plugins.Utilities.Shared",
+      "ValueUsage": "DesignTime",
+      "Value": "IsNotNull"
+    },
+    {
+      "Id": "Item",
+      "Type": "Compiled:Object?",
+      "ValueUsage": "RuntimeRead",
+      "Value": {
+        "Expression": "$.Parameters.SessionToken",
+        "CompiledExpression": "={0}",
+        "Type": "Compiled:String?"
+      },
+      "ValueType": "Linx.CSharpExpression?"
+    },
+    {
+      "Id": "Message",
+      "Type": "Compiled:String?",
+      "ValueUsage": "RuntimeRead",
+      "Value": ""
+    }
+  ]
+}

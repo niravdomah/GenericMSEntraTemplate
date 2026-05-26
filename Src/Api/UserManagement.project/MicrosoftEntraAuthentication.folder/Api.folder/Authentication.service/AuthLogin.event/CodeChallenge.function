@@ -1,0 +1,23 @@
+{
+  "Properties": [
+    {
+      "Id": "Nullable",
+      "Type": "Compiled:Boolean",
+      "ValueUsage": "DesignTime",
+      "Value": true
+    },
+    {
+      "Id": "Value",
+      "Type": "Compiled:String?",
+      "ValueUsage": "RuntimeRead",
+      "Value": {
+        "Expression": "GenerateChallengeHash.ToBase64().Replace(\"+\", \"-\").Replace(\"/\", \"_\").Replace(\"=\", \"\")",
+        "CompiledExpression": "=System.Convert.ToBase64String({0}.ToArray()).Replace(\"+\",\"-\").Replace(\"/\",\"_\").Replace(\"=\",\"\")",
+        "Type": "Compiled:String?"
+      },
+      "ValueType": "Linx.CSharpExpression?"
+    }
+  ],
+  "Result": "Compiled:String?",
+  "Version": "1"
+}

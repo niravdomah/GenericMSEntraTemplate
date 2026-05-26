@@ -1,0 +1,77 @@
+{
+  "Properties": [
+    {
+      "Id": "Connection type",
+      "Type": "Compiled:Twenty57.Linx.Plugins.Database.Shared.Common.Sql.DesignerConnectionType, Twenty57.Linx.Plugins.Database.Shared?",
+      "ValueUsage": "DesignTime",
+      "Value": "UseTransaction"
+    },
+    {
+      "Id": "Expression0",
+      "Type": "Compiled:Object?",
+      "ValueUsage": "RuntimeRead",
+      "Value": {
+        "Expression": "CreateUser.UserId",
+        "CompiledExpression": "={0}",
+        "Type": "Compiled:Int64"
+      },
+      "ValueType": "Linx.CSharpExpression?"
+    },
+    {
+      "Id": "Expression1",
+      "Type": "Compiled:Object?",
+      "ValueUsage": "RuntimeRead",
+      "Value": {
+        "Expression": "$.Parameters.LastChangedUser",
+        "CompiledExpression": "={0}",
+        "Type": "Compiled:String?"
+      },
+      "ValueType": "Linx.CSharpExpression?"
+    },
+    {
+      "Id": "Expression2",
+      "Type": "Compiled:Object?",
+      "ValueUsage": "RuntimeRead",
+      "Value": {
+        "Expression": "StringifyBody",
+        "CompiledExpression": "={0}",
+        "Type": "Compiled:String?"
+      },
+      "ValueType": "Linx.CSharpExpression?"
+    },
+    {
+      "Id": "Result type",
+      "Type": "Compiled:Twenty57.Linx.Plugins.Database.Shared.ExecuteSQL.ResultType, Twenty57.Linx.Plugins.Database.Shared?",
+      "ValueUsage": "DesignTime",
+      "Value": {
+        "CustomType": null,
+        "Fields": [],
+        "IsCustomType": false
+      }
+    },
+    {
+      "Id": "SQL",
+      "Type": "Compiled:String?",
+      "ValueUsage": "RuntimeRead",
+      "Value": "INSERT INTO\r\n    UserManagement.UserRole\r\n    (\r\n        UserId,\r\n        RoleId,\r\n        LastChangedUser\r\n    )\r\nSELECT\r\n    @{CreateUser.UserId} AS UserId,\r\n    RoleId,\r\n    @{$.Parameters.LastChangedUser} AS LastChangedUser\r\nFROM\r\n    OPENJSON(@{StringifyBody}, '$.Roles')\r\nWITH\r\n(\r\n    RoleId INTEGER '$.Id'\r\n);"
+    },
+    {
+      "Id": "Timeout",
+      "Type": "Compiled:Int32",
+      "ValueUsage": "DesignTime",
+      "Value": 60
+    },
+    {
+      "Id": "Transaction",
+      "Type": "Compiled:Twenty57.Linx.Plugins.Database.Shared.Transaction, Twenty57.Linx.Plugins.Database.Shared?",
+      "ValueUsage": "RuntimeRead",
+      "Value": {
+        "Expression": "BeginTransaction.Transaction",
+        "CompiledExpression": "={0}",
+        "Type": "Compiled:Twenty57.Linx.Plugins.Database.Shared.Transaction, Twenty57.Linx.Plugins.Database.Shared?"
+      },
+      "ValueType": "Linx.CSharpExpression?"
+    }
+  ],
+  "Version": "3"
+}

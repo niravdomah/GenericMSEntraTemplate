@@ -1,0 +1,39 @@
+{
+  "Properties": [
+    {
+      "Id": "kFBq",
+      "Type": "Compiled:String?",
+      "ValueUsage": "RuntimeRead",
+      "Value": {
+        "Expression": "GetTokenFromCode.ResponseBody.id_token",
+        "CompiledExpression": "={0}",
+        "Type": "Compiled:String?"
+      },
+      "ValueType": "Linx.CSharpExpression?"
+    },
+    {
+      "Id": "ParameterNameMapping",
+      "Type": "Compiled:System.Collections.Generic.IDictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib?",
+      "ValueUsage": "DesignTime",
+      "Value": {
+        "kFBq": "Token"
+      },
+      "ValueType": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib?"
+    },
+    {
+      "Id": "Process",
+      "Type": "Compiled:Linx.IProcessReference?",
+      "ValueUsage": "DesignTime",
+      "Value": {
+        "Id": "Bj3E",
+        "Name": "MicrosoftEntraAuthentication.ValidateToken",
+        "Parameters": "Generated:T_U37n?",
+        "Result": "Custom:4CsL?",
+        "IsValid": true,
+        "QualifiedPath": "FL:MicrosoftEntraAuthentication→PC:ValidateToken"
+      },
+      "ValueType": "Linx.ProcessReference?"
+    }
+  ],
+  "Result": "Custom:4CsL?"
+}

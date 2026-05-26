@@ -1,0 +1,98 @@
+[
+  {
+    "Id": "pCPu",
+    "Name": "DatabaseConnection",
+    "Type": "Compiled:String?",
+    "Value": "Data Source={DatabaseServer};Initial Catalog={DatabaseName};TrustServerCertificate=True;Integrated Security=True;"
+  },
+  {
+    "Id": "fczZ",
+    "Name": "DatabaseServer",
+    "Type": "Compiled:String?",
+    "Value": "SQL2022"
+  },
+  {
+    "Id": "fEgI",
+    "Name": "DatabaseName",
+    "Type": "Compiled:String?",
+    "Value": "UserManagement"
+  },
+  {
+    "Id": "4YSk",
+    "Name": "CallbackUri",
+    "Type": "Compiled:String?",
+    "Value": "http://localhost:10010/v1/auth/callback"
+  },
+  {
+    "Id": "Mvt3",
+    "Name": "ClientErrorUri",
+    "Type": "Compiled:String?",
+    "Value": "http://localhost:3000/unauthorized"
+  },
+  {
+    "Id": "j5Av",
+    "Name": "ClientRedirectUri",
+    "Type": "Compiled:String?",
+    "Value": "http://localhost:3000/"
+  },
+  {
+    "Id": "PhDC",
+    "Name": "EntraCodeVerifier",
+    "Type": "Compiled:String?",
+    "Value": "ThisIsntRandomButItNeedsToBe43CharactersLong"
+  },
+  {
+    "Id": "HkbJ",
+    "Name": "JwtSecret",
+    "Type": "Compiled:String?",
+    "Value": "A1B2C3D4E5F6G7H8I9J0K1L2M3N4O5P6Q7R8S9T0"
+  },
+  {
+    "Id": "dV6h",
+    "Name": "MicrosoftClientId",
+    "Type": "Compiled:String?",
+    "Secret": true
+  },
+  {
+    "Id": "yCLX",
+    "Name": "MicrosoftClientSecret",
+    "Type": "Compiled:String?",
+    "Secret": true
+  },
+  {
+    "Id": "HJrS",
+    "Name": "AuthenticationBaseUri",
+    "Type": "Compiled:String?",
+    "Value": "http://localhost:10010"
+  },
+  {
+    "Id": "9aTo",
+    "Name": "MicrosoftLoginUri",
+    "Type": "Compiled:String?",
+    "Value": "https://login.microsoftonline.com/{MicrosoftTenantId}/oauth2/v2.0/token"
+  },
+  {
+    "Id": "ZzlS",
+    "Name": "MicrosoftTenantId",
+    "Type": "Compiled:String?",
+    "Secret": true
+  },
+  {
+    "Id": "UE5p",
+    "Name": "SessionExpiryMinutes",
+    "Type": "Compiled:Int64",
+    "Value": "60"
+  },
+  {
+    "Id": "7Y9G",
+    "Name": "UserManagementApiUri",
+    "Type": "Compiled:String?",
+    "Value": "http://localhost:10011/user-management"
+  },
+  {
+    "Id": "XDVH",
+    "Name": "CORSOrigins",
+    "Type": "Compiled:String?",
+    "Value": "[\"http://localhost:3000\",\"http://localhost:10010\", \"https://login.microsoftonline.com\", \"http://localhost:10011\"]"
+  }
+]

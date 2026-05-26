@@ -1,0 +1,16 @@
+{
+  "Id": "P6mq",
+  "Name": "HttpContext",
+  "Properties": [
+    {
+      "Id": "OtZf",
+      "Name": "StatusCode",
+      "Type": "Compiled:Int64"
+    },
+    {
+      "Id": "LTj4",
+      "Name": "User",
+      "Type": "Custom:Uopg?"
+    }
+  ]
+}

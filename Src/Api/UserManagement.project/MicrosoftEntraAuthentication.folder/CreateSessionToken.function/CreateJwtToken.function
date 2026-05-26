@@ -1,0 +1,34 @@
+{
+  "Properties": [
+    {
+      "Id": "Algorithm",
+      "Type": "Compiled:Twenty57.Linx.Plugins.Cryptography.Shared.Jwt.Common.JwtAlgorithm, Twenty57.Linx.Plugins.Cryptography.Shared",
+      "ValueUsage": "DesignTime",
+      "Value": "HS256"
+    },
+    {
+      "Id": "Payload",
+      "Type": "Compiled:String?",
+      "ValueUsage": "RuntimeRead",
+      "Value": {
+        "Expression": "ReadUserJwtDetails",
+        "CompiledExpression": "={0}",
+        "Type": "Generated:T_XC88?"
+      },
+      "ValueType": "Linx.CSharpExpression?"
+    },
+    {
+      "Id": "Secret key",
+      "Type": "Compiled:Twenty57.Linx.Plugins.Cryptography.Shared.Common.Binary, Twenty57.Linx.Plugins.Cryptography.Shared?",
+      "ValueUsage": "RuntimeRead",
+      "Value": {
+        "Expression": "JwtSecretBytes",
+        "CompiledExpression": "={0}",
+        "Type": "List:?Compiled:Byte"
+      },
+      "ValueType": "Linx.CSharpExpression?"
+    }
+  ],
+  "Result": "Compiled:String?",
+  "Version": "1"
+}

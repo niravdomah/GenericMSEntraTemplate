@@ -1,0 +1,55 @@
+{
+  "Properties": [
+    {
+      "Id": "Connection type",
+      "Type": "Compiled:Twenty57.Linx.Plugins.Database.Shared.Common.Sql.DesignerConnectionType, Twenty57.Linx.Plugins.Database.Shared?",
+      "ValueUsage": "DesignTime",
+      "Value": "UseTransaction"
+    },
+    {
+      "Id": "Expression0",
+      "Type": "Compiled:Object?",
+      "ValueUsage": "RuntimeRead",
+      "Value": {
+        "Expression": "$.Parameters.Id",
+        "CompiledExpression": "={0}",
+        "Type": "Compiled:Int32"
+      },
+      "ValueType": "Linx.CSharpExpression?"
+    },
+    {
+      "Id": "Result type",
+      "Type": "Compiled:Twenty57.Linx.Plugins.Database.Shared.ExecuteSQL.ResultType, Twenty57.Linx.Plugins.Database.Shared?",
+      "ValueUsage": "DesignTime",
+      "Value": {
+        "CustomType": null,
+        "Fields": [],
+        "IsCustomType": true
+      }
+    },
+    {
+      "Id": "SQL",
+      "Type": "Compiled:String?",
+      "ValueUsage": "RuntimeRead",
+      "Value": "DELETE FROM \r\n\tUserManagement.UserRole\r\nWHERE\r\n\t[RoleId] = @{$.Parameters.Id}"
+    },
+    {
+      "Id": "Timeout",
+      "Type": "Compiled:Int32",
+      "ValueUsage": "DesignTime",
+      "Value": 60
+    },
+    {
+      "Id": "Transaction",
+      "Type": "Compiled:Twenty57.Linx.Plugins.Database.Shared.Transaction, Twenty57.Linx.Plugins.Database.Shared?",
+      "ValueUsage": "RuntimeRead",
+      "Value": {
+        "Expression": "BeginTransaction.Transaction",
+        "CompiledExpression": "={0}",
+        "Type": "Compiled:Twenty57.Linx.Plugins.Database.Shared.Transaction, Twenty57.Linx.Plugins.Database.Shared?"
+      },
+      "ValueType": "Linx.CSharpExpression?"
+    }
+  ],
+  "Version": "3"
+}

@@ -1,0 +1,5 @@
+IF NOT EXISTS(SELECT * FROM INFORMATION_SCHEMA.SCHEMATA WHERE schema_name = 'UserManagement')
+BEGIN
+	EXEC sp_executesql N'CREATE SCHEMA [UserManagement]'
+END
+GO

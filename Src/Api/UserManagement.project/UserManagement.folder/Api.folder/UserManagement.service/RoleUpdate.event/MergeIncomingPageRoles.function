@@ -1,0 +1,99 @@
+{
+  "Properties": [
+    {
+      "Id": "Connection type",
+      "Type": "Compiled:Twenty57.Linx.Plugins.Database.Shared.Common.Sql.DesignerConnectionType, Twenty57.Linx.Plugins.Database.Shared?",
+      "ValueUsage": "DesignTime",
+      "Value": "UseTransaction"
+    },
+    {
+      "Id": "Expression0",
+      "Type": "Compiled:Object?",
+      "ValueUsage": "RuntimeRead",
+      "Value": {
+        "Expression": "StringifyBody",
+        "CompiledExpression": "={0}",
+        "Type": "Compiled:String?"
+      },
+      "ValueType": "Linx.CSharpExpression?"
+    },
+    {
+      "Id": "Expression1",
+      "Type": "Compiled:Object?",
+      "ValueUsage": "RuntimeRead",
+      "Value": {
+        "Expression": "$.Parameters.Id",
+        "CompiledExpression": "={0}",
+        "Type": "Compiled:Int32"
+      },
+      "ValueType": "Linx.CSharpExpression?"
+    },
+    {
+      "Id": "Expression2",
+      "Type": "Compiled:Object?",
+      "ValueUsage": "RuntimeRead",
+      "Value": {
+        "Expression": "$.Parameters.Id",
+        "CompiledExpression": "={0}",
+        "Type": "Compiled:Int32"
+      },
+      "ValueType": "Linx.CSharpExpression?"
+    },
+    {
+      "Id": "Expression3",
+      "Type": "Compiled:Object?",
+      "ValueUsage": "RuntimeRead",
+      "Value": {
+        "Expression": "$.Parameters.LastChangedUser",
+        "CompiledExpression": "={0}",
+        "Type": "Compiled:String?"
+      },
+      "ValueType": "Linx.CSharpExpression?"
+    },
+    {
+      "Id": "Expression4",
+      "Type": "Compiled:Object?",
+      "ValueUsage": "RuntimeRead",
+      "Value": {
+        "Expression": "$.Parameters.Id",
+        "CompiledExpression": "={0}",
+        "Type": "Compiled:Int32"
+      },
+      "ValueType": "Linx.CSharpExpression?"
+    },
+    {
+      "Id": "Result type",
+      "Type": "Compiled:Twenty57.Linx.Plugins.Database.Shared.ExecuteSQL.ResultType, Twenty57.Linx.Plugins.Database.Shared?",
+      "ValueUsage": "DesignTime",
+      "Value": {
+        "CustomType": null,
+        "Fields": [],
+        "IsCustomType": true
+      }
+    },
+    {
+      "Id": "SQL",
+      "Type": "Compiled:String?",
+      "ValueUsage": "RuntimeRead",
+      "Value": "MERGE UserManagement.RolePage AS Target\r\nUSING\r\n(\r\n    SELECT\r\n        PageId\r\n    FROM OPENJSON(@{StringifyBody}, '$.Pages')\r\n    WITH\r\n    (\r\n        PageId INTEGER '$.Id'\r\n    )\r\n) AS Source\r\nON\r\n    Target.RoleId = @{$.Parameters.Id}\r\nAND\r\n    Target.PageId = Source.PageId\r\nWHEN NOT MATCHED BY TARGET THEN\r\n    INSERT\r\n    (\r\n        RoleId,\r\n        PageId,\r\n        LastChangedUser\r\n    )\r\n    VALUES\r\n    (\r\n        @{$.Parameters.Id},\r\n        Source.PageId,\r\n        @{$.Parameters.LastChangedUser}\r\n    )\r\nWHEN NOT MATCHED BY SOURCE\r\nAND\r\n    Target.RoleId = @{$.Parameters.Id}\r\nTHEN\r\n    DELETE;"
+    },
+    {
+      "Id": "Timeout",
+      "Type": "Compiled:Int32",
+      "ValueUsage": "DesignTime",
+      "Value": 60
+    },
+    {
+      "Id": "Transaction",
+      "Type": "Compiled:Twenty57.Linx.Plugins.Database.Shared.Transaction, Twenty57.Linx.Plugins.Database.Shared?",
+      "ValueUsage": "RuntimeRead",
+      "Value": {
+        "Expression": "BeginTransaction.Transaction",
+        "CompiledExpression": "={0}",
+        "Type": "Compiled:Twenty57.Linx.Plugins.Database.Shared.Transaction, Twenty57.Linx.Plugins.Database.Shared?"
+      },
+      "ValueType": "Linx.CSharpExpression?"
+    }
+  ],
+  "Version": "3"
+}

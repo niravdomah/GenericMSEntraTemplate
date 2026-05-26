@@ -1,0 +1,42 @@
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[UpdateScriptLog]') AND type in (N'U'))
+ALTER TABLE [dbo].[UpdateScriptLog] DROP CONSTRAINT IF EXISTS [DfUpdateScriptLogDateApplied]
+GO
+
+DROP INDEX IF EXISTS [UxUpdateScriptLogScriptName] ON [dbo].[UpdateScriptLog]
+GO
+
+DROP TABLE IF EXISTS [dbo].[UpdateScriptLog]
+GO
+
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[UpdateScriptLog](
+	[Id] [int] IDENTITY(1,1) NOT NULL,
+	[ScriptName] [varchar](300) NOT NULL,
+	[DateApplied] [datetime] NOT NULL,
+	[Script] [varchar](max) NOT NULL,
+ CONSTRAINT [PkUpdateScriptLog] PRIMARY KEY CLUSTERED 
+(
+	[Id] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
+GO
+
+SET ANSI_PADDING ON
+GO
+
+CREATE UNIQUE NONCLUSTERED INDEX [UxUpdateScriptLogScriptName] ON [dbo].[UpdateScriptLog]
+(
+	[ScriptName] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, SORT_IN_TEMPDB = OFF, IGNORE_DUP_KEY = OFF, DROP_EXISTING = OFF, ONLINE = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+GO
+
+ALTER TABLE [dbo].[UpdateScriptLog] ADD  CONSTRAINT [DfUpdateScriptLogDateApplied]  DEFAULT (getdate()) FOR [DateApplied]
+GO
+
+exec sp_changedbowner 'sa'
+go
+

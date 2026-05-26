@@ -1,0 +1,30 @@
+[
+  {
+    "Type": "Generated",
+    "Value": {
+      "Id": "T_fCJ4",
+      "Properties": [
+        {
+          "Id": "0xkU",
+          "Name": "HttpContext",
+          "Type": "Custom:P6mq?",
+          "Access": "ReadWrite"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "Generated",
+    "Value": {
+      "Id": "T_KYWp",
+      "Properties": [
+        {
+          "Id": "S0qx",
+          "Name": "SessionToken",
+          "Type": "Compiled:String?",
+          "Access": "ReadWrite"
+        }
+      ]
+    }
+  }
+]

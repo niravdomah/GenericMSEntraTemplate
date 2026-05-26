@@ -1,0 +1,16 @@
+{
+  "Id": "ggn9",
+  "Name": "Role",
+  "Properties": [
+    {
+      "Id": "0Si5",
+      "Name": "Id",
+      "Type": "Compiled:Int64"
+    },
+    {
+      "Id": "MdmH",
+      "Name": "Name",
+      "Type": "Compiled:String?"
+    }
+  ]
+}

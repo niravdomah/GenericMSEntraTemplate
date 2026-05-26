@@ -1,0 +1,31 @@
+{
+  "Properties": [
+    {
+      "Id": "Value",
+      "Type": "Generated:T_fCJ4?",
+      "ValueUsage": "RuntimeRead",
+      "Value": {
+        "ParsedExpression": "{\"HttpContext\":{\"StatusCode\":200, \"User\":{\"IsAuthenticated\":true, \"Name\":{\"LinxExpression\":\"[PARSED]\"}}}}",
+        "ExpressionPlaceholders": [
+          {
+            "typePath": [
+              "HttpContext",
+              "User",
+              "Name"
+            ],
+            "expression": {
+              "Expression": "GetSession.UserId",
+              "CompiledExpression": "={0}",
+              "Type": "Compiled:Int64"
+            }
+          }
+        ]
+      },
+      "ValueType": "Linx.JsonExpression?"
+    }
+  ],
+  "RuntimeCharacteristics": {
+    "IsTerminating": true,
+    "ExecutionPathExecution": "ZeroOrMore"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "Properties": [
+    {
+      "Id": "Nullable",
+      "Type": "Compiled:Boolean",
+      "ValueUsage": "DesignTime",
+      "Value": true
+    },
+    {
+      "Id": "Type",
+      "Type": "Compiled:Linx.ITypeReference?",
+      "ValueUsage": "DesignTime",
+      "Value": "Custom:Oxji?",
+      "ValueType": "Linx.ValidCustomTypeReference?"
+    },
+    {
+      "Id": "Value",
+      "Type": "Custom:Oxji?",
+      "ValueUsage": "RuntimeRead",
+      "Value": {
+        "Expression": "Base64UrlToBase64.ToBytesFromBase64().ToString(\"UTF8\")",
+        "CompiledExpression": "=System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String({0}).ToList().ToArray())",
+        "Type": "Compiled:String?"
+      },
+      "ValueType": "Linx.CSharpExpression?"
+    }
+  ],
+  "Result": "Custom:Oxji?",
+  "Version": "1"
+}

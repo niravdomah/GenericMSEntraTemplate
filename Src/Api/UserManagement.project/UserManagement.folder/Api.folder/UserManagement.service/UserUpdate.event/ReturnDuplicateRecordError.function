@@ -1,0 +1,15 @@
+{
+  "Properties": [
+    {
+      "Id": "Value",
+      "Type": "Generated:C_GhsI.Operations.UserUpdate.Result?",
+      "ValueUsage": "RuntimeRead",
+      "Value": "{\"HttpContext\":{\"StatusCode\":500, \"Headers\":[{\"Name\":\"content-type\", \"Value\":[\"application/json\"]}]}, \"Response200\":{}, \"Response500\":{\"MessageType\":\"Warning\", \"Messages\":[\"User already exists\"]}}",
+      "ValueType": "String?"
+    }
+  ],
+  "RuntimeCharacteristics": {
+    "IsTerminating": true,
+    "ExecutionPathExecution": "ZeroOrMore"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "Id": "Uopg",
+  "Name": "HttpContextUser",
+  "Properties": [
+    {
+      "Id": "MJnr",
+      "Name": "IsAuthenticated",
+      "Type": "Compiled:Boolean"
+    },
+    {
+      "Id": "pweG",
+      "Name": "Name",
+      "Type": "Compiled:String?"
+    }
+  ]
+}

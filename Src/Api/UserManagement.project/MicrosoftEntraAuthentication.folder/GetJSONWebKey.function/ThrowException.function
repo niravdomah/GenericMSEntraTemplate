@@ -1,0 +1,20 @@
+{
+  "Properties": [
+    {
+      "Id": "Message",
+      "Type": "Compiled:String?",
+      "ValueUsage": "RuntimeRead",
+      "Value": {
+        "Expression": "\"Key \" + $.Parameters.KeyId + \" not found\"",
+        "CompiledExpression": "=\"Key \"+{0}+\" not found\"",
+        "Type": "Compiled:String?"
+      },
+      "ValueType": "Linx.CSharpExpression?"
+    }
+  ],
+  "RuntimeCharacteristics": {
+    "IsTerminating": true,
+    "ExecutionPathExecution": "ZeroOrMore"
+  },
+  "Version": "1"
+}
