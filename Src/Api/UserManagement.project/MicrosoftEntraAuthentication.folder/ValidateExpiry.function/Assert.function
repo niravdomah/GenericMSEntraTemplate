@@ -17,7 +17,7 @@
       "Type": "Compiled:Object?",
       "ValueUsage": "RuntimeRead",
       "Value": {
-        "Expression": "NowInUnixSeconds",
+        "Expression": "$.Parameters.UnixTimeUTC",
         "CompiledExpression": "={0}",
         "Type": "Compiled:Int64"
       },
@@ -28,7 +28,7 @@
       "Type": "Compiled:Object?",
       "ValueUsage": "RuntimeRead",
       "Value": {
-        "Expression": "$.Parameters.UnixTimeUTC",
+        "Expression": "NowInUnixSeconds",
         "CompiledExpression": "={0}",
         "Type": "Compiled:Int64"
       },
