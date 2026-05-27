@@ -28,9 +28,9 @@
       "Type": "Compiled:String?",
       "ValueUsage": "RuntimeRead",
       "Value": {
-        "Expression": "GenerateChallengeHash",
-        "CompiledExpression": "={0}",
-        "Type": "Compiled:System.Collections.Generic.List`1[[System.Byte, System.Private.CoreLib]], System.Private.CoreLib?"
+        "Expression": "GenerateChallengeHash.ToBase64()",
+        "CompiledExpression": "=System.Convert.ToBase64String({0}.ToArray())",
+        "Type": "Compiled:String?"
       },
       "ValueType": "Linx.CSharpExpression?"
     }
