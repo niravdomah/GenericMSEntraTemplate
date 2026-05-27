@@ -1,0 +1,39 @@
+{
+  "Properties": [
+    {
+      "Id": "Fbtp",
+      "Type": "Compiled:String?",
+      "ValueUsage": "RuntimeRead",
+      "Value": {
+        "Expression": "$.Parameters.AuthCookieValue.Split('.')[1]",
+        "CompiledExpression": "={0}.Split('.')[1]",
+        "Type": "Compiled:String?"
+      },
+      "ValueType": "Linx.CSharpExpression?"
+    },
+    {
+      "Id": "ParameterNameMapping",
+      "Type": "Compiled:System.Collections.Generic.IDictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib?",
+      "ValueUsage": "DesignTime",
+      "Value": {
+        "Fbtp": "Base64URL"
+      },
+      "ValueType": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib?"
+    },
+    {
+      "Id": "Process",
+      "Type": "Compiled:Linx.IProcessReference?",
+      "ValueUsage": "DesignTime",
+      "Value": {
+        "Id": "MI4l",
+        "Name": "MicrosoftEntraAuthentication.Base64URLToBase64",
+        "Parameters": "Generated:T_0yaK?",
+        "Result": "Compiled:String?",
+        "IsValid": true,
+        "QualifiedPath": "FL:MicrosoftEntraAuthentication→PC:Base64URLToBase64"
+      },
+      "ValueType": "Linx.ProcessReference?"
+    }
+  ],
+  "Result": "Compiled:String?"
+}

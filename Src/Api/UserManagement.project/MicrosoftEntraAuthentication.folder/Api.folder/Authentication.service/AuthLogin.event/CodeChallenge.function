@@ -11,8 +11,8 @@
       "Type": "Compiled:String?",
       "ValueUsage": "RuntimeRead",
       "Value": {
-        "Expression": "GenerateChallengeHash.ToBase64().Replace(\"+\", \"-\").Replace(\"/\", \"_\").Replace(\"=\", \"\")",
-        "CompiledExpression": "=System.Convert.ToBase64String({0}.ToArray()).Replace(\"+\",\"-\").Replace(\"/\",\"_\").Replace(\"=\",\"\")",
+        "Expression": "CodeChallengeBase64ToBase64Url",
+        "CompiledExpression": "={0}",
         "Type": "Compiled:String?"
       },
       "ValueType": "Linx.CSharpExpression?"

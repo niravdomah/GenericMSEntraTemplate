@@ -1,0 +1,39 @@
+{
+  "Properties": [
+    {
+      "Id": "ParameterNameMapping",
+      "Type": "Compiled:System.Collections.Generic.IDictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib?",
+      "ValueUsage": "DesignTime",
+      "Value": {
+        "zr1R": "DateTime"
+      },
+      "ValueType": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib?"
+    },
+    {
+      "Id": "Process",
+      "Type": "Compiled:Linx.IProcessReference?",
+      "ValueUsage": "DesignTime",
+      "Value": {
+        "Id": "cyxe",
+        "Name": "MicrosoftEntraAuthentication.ToUnixSeconds",
+        "Parameters": "Generated:T_8mIf?",
+        "Result": "Compiled:Int64",
+        "IsValid": true,
+        "QualifiedPath": "FL:MicrosoftEntraAuthentication→PC:ToUnixSeconds"
+      },
+      "ValueType": "Linx.ProcessReference?"
+    },
+    {
+      "Id": "zr1R",
+      "Type": "Compiled:DateTime",
+      "ValueUsage": "RuntimeRead",
+      "Value": {
+        "Expression": "$.System.CurrentDateTime.ToUniversalTime().AddMinutes(10)",
+        "CompiledExpression": "={0}.ToUniversalTime().AddMinutes(10)",
+        "Type": "Compiled:DateTime"
+      },
+      "ValueType": "Linx.CSharpExpression?"
+    }
+  ],
+  "Result": "Compiled:Int64"
+}

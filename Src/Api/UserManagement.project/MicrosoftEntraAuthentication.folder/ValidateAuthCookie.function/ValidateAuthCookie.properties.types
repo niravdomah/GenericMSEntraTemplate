@@ -1,0 +1,16 @@
+[
+  {
+    "Type": "Generated",
+    "Value": {
+      "Id": "T_PP78",
+      "Properties": [
+        {
+          "Id": "Ixis",
+          "Name": "AuthCookieValue",
+          "Type": "Compiled:String?",
+          "Access": "ReadWrite"
+        }
+      ]
+    }
+  }
+]

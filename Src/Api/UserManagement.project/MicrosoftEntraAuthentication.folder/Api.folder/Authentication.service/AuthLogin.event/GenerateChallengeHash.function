@@ -5,8 +5,8 @@
       "Type": "Compiled:Twenty57.Linx.Plugins.Cryptography.Shared.GenerateHash.Binary, Twenty57.Linx.Plugins.Cryptography.Shared?",
       "ValueUsage": "RuntimeRead",
       "Value": {
-        "Expression": "$.Settings.EntraCodeVerifier + \"\"",
-        "CompiledExpression": "={0}+\"\"",
+        "Expression": "CodeVerifier",
+        "CompiledExpression": "={0}",
         "Type": "Compiled:String?"
       },
       "ValueType": "Linx.CSharpExpression?"

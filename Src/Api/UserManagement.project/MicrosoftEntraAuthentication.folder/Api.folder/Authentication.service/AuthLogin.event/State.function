@@ -10,7 +10,12 @@
       "Id": "Value",
       "Type": "Compiled:String?",
       "ValueUsage": "RuntimeRead",
-      "Value": "testing"
+      "Value": {
+        "Expression": "GenerateState",
+        "CompiledExpression": "={0}",
+        "Type": "Compiled:String?"
+      },
+      "ValueType": "Linx.CSharpExpression?"
     }
   ],
   "Result": "Compiled:String?",

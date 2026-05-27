@@ -1,0 +1,19 @@
+{
+  "Properties": [
+    {
+      "Id": "Value",
+      "Type": "Custom:ydRi?",
+      "ValueUsage": "RuntimeRead",
+      "Value": {
+        "Expression": "PayloadJson",
+        "CompiledExpression": "={0}",
+        "Type": "Custom:ydRi?"
+      },
+      "ValueType": "Linx.CSharpExpression?"
+    }
+  ],
+  "RuntimeCharacteristics": {
+    "IsTerminating": true,
+    "ExecutionPathExecution": "ZeroOrMore"
+  }
+}

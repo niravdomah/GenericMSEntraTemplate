@@ -1,0 +1,79 @@
+{
+  "Properties": [
+    {
+      "Id": "ParameterNameMapping",
+      "Type": "Compiled:System.Collections.Generic.IDictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib?",
+      "ValueUsage": "DesignTime",
+      "Value": {
+        "rqSi": "AuthCookiePayload"
+      },
+      "ValueType": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib?"
+    },
+    {
+      "Id": "Process",
+      "Type": "Compiled:Linx.IProcessReference?",
+      "ValueUsage": "DesignTime",
+      "Value": {
+        "Id": "R1ku",
+        "Name": "MicrosoftEntraAuthentication.CreateAuthCookie",
+        "Parameters": "Generated:T_rCw1?",
+        "Result": "Compiled:String?",
+        "IsValid": true,
+        "QualifiedPath": "FL:MicrosoftEntraAuthentication→PC:CreateAuthCookie"
+      },
+      "ValueType": "Linx.ProcessReference?"
+    },
+    {
+      "Id": "rqSi",
+      "Type": "Custom:ydRi?",
+      "ValueUsage": "RuntimeRead",
+      "Value": {
+        "ParsedExpression": "{\"v\":{\"LinxExpression\":\"[PARSED]\"}, \"s\":{\"LinxExpression\":\"[PARSED]\"}, \"n\":{\"LinxExpression\":\"[PARSED]\"}, \"exp\":{\"LinxExpression\":\"[PARSED]\"}}",
+        "ExpressionPlaceholders": [
+          {
+            "typePath": [
+              "v"
+            ],
+            "expression": {
+              "Expression": "CodeVerifier",
+              "CompiledExpression": "={0}",
+              "Type": "Compiled:String?"
+            }
+          },
+          {
+            "typePath": [
+              "s"
+            ],
+            "expression": {
+              "Expression": "State",
+              "CompiledExpression": "={0}",
+              "Type": "Compiled:String?"
+            }
+          },
+          {
+            "typePath": [
+              "n"
+            ],
+            "expression": {
+              "Expression": "Nonce",
+              "CompiledExpression": "={0}",
+              "Type": "Compiled:String?"
+            }
+          },
+          {
+            "typePath": [
+              "exp"
+            ],
+            "expression": {
+              "Expression": "Exp",
+              "CompiledExpression": "={0}",
+              "Type": "Compiled:Int64"
+            }
+          }
+        ]
+      },
+      "ValueType": "Linx.JsonExpression?"
+    }
+  ],
+  "Result": "Compiled:String?"
+}

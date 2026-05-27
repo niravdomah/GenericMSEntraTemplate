@@ -1,0 +1,23 @@
+{
+  "Properties": [
+    {
+      "Id": "Nullable",
+      "Type": "Compiled:Boolean",
+      "ValueUsage": "DesignTime",
+      "Value": false
+    },
+    {
+      "Id": "Value",
+      "Type": "Compiled:Double",
+      "ValueUsage": "RuntimeRead",
+      "Value": {
+        "Expression": "($.Parameters.DateTime - \"1970-01-01\".ToDateTime(\"yyyy-MM-dd\")).TotalSeconds",
+        "CompiledExpression": "=({0}-System.DateTime.ParseExact(\"1970-01-01\",\"yyyy-MM-dd\",null)).TotalSeconds",
+        "Type": "Compiled:Double"
+      },
+      "ValueType": "Linx.CSharpExpression?"
+    }
+  ],
+  "Result": "Compiled:Double",
+  "Version": "1"
+}

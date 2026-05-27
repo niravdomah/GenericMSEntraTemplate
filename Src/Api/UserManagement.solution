@@ -1,11 +1,13 @@
 {
-  "ApplicationVersion": "6.13.0.0",
+  "ApplicationVersion": "6.13.1.0",
   "SolutionVersion": 18,
   "Plugins": [
     "twenty57.linx.plugins.cryptography, 3.0.4",
+    "twenty57.linx.plugins.csharp, 1.2.0",
     "twenty57.linx.plugins.database, 3.2.1",
     "twenty57.linx.plugins.excel, 1.3.1",
     "twenty57.linx.plugins.file, 1.2.4",
+    "twenty57.linx.plugins.json, 1.2.0",
     "twenty57.linx.plugins.processautomation, 1.3.1",
     "twenty57.linx.plugins.rest, 3.0.1",
     "twenty57.linx.plugins.standard, 2.2.0",

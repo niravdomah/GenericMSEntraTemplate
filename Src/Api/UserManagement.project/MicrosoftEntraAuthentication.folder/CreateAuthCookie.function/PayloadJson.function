@@ -1,0 +1,52 @@
+{
+  "Properties": [
+    {
+      "Id": "Data",
+      "Type": "Compiled:Object?",
+      "ValueUsage": "RuntimeRead",
+      "Value": {
+        "Expression": "$.Parameters.AuthCookiePayload",
+        "CompiledExpression": "={0}",
+        "Type": "Custom:ydRi?"
+      },
+      "ValueType": "Linx.CSharpExpression?"
+    },
+    {
+      "Id": "Date format",
+      "Type": "Compiled:String?",
+      "ValueUsage": "DesignTime",
+      "Value": null
+    },
+    {
+      "Id": "Enum format",
+      "Type": "Compiled:Twenty57.Linx.Plugins.Json.Shared.JsonWriter.EnumFormat, Twenty57.Linx.Plugins.Json.Shared",
+      "ValueUsage": "DesignTime",
+      "Value": "Number"
+    },
+    {
+      "Id": "Escape string",
+      "Type": "Compiled:Twenty57.Linx.Plugins.Json.Shared.JsonWriter.StringEscape, Twenty57.Linx.Plugins.Json.Shared",
+      "ValueUsage": "DesignTime",
+      "Value": "Default"
+    },
+    {
+      "Id": "Ignore null properties",
+      "Type": "Compiled:Boolean",
+      "ValueUsage": "DesignTime",
+      "Value": false
+    },
+    {
+      "Id": "Indent",
+      "Type": "Compiled:Boolean",
+      "ValueUsage": "DesignTime",
+      "Value": false
+    },
+    {
+      "Id": "Property map",
+      "Type": "Compiled:Twenty57.Linx.Plugins.Json.Shared.Common.Mappings, Twenty57.Linx.Plugins.Json.Shared?",
+      "ValueUsage": "DesignTime",
+      "Value": ""
+    }
+  ],
+  "Result": "Compiled:String?"
+}

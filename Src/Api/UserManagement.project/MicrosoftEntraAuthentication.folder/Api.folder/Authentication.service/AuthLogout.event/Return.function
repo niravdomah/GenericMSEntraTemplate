@@ -4,7 +4,7 @@
       "Id": "Value",
       "Type": "Generated:C_VDAN.Operations.AuthLogout.Result?",
       "ValueUsage": "RuntimeRead",
-      "Value": "{\"HttpContext\":{\"StatusCode\":200, \"Headers\":[{\"Name\":\"Set-Cookie\", \"Value\":[\"session=; expires=Thu, 01 Jan 1970 00:00:00 GMT\"]}]}}",
+      "Value": "{\"HttpContext\":{\"StatusCode\":200, \"Headers\":[{\"Name\":\"Set-Cookie\", \"Value\":[\"session=; Path=/; Expires=Thu, 01 Jan 1970 00:00:00 GMT\"]}]}}",
       "ValueType": "String?"
     }
   ],

@@ -1,0 +1,40 @@
+{
+  "Properties": [
+    {
+      "Id": "ErrorMessage",
+      "Type": "Compiled:String?",
+      "ValueUsage": "DesignTime",
+      "Value": null
+    },
+    {
+      "Id": "Function         ​",
+      "Type": "Compiled:String?",
+      "ValueUsage": "DesignTime",
+      "Value": "long Function(double number)\r\n{\r\n    return (long)System.Math.Floor(number);\r\n}"
+    },
+    {
+      "Id": "IsCodeValid",
+      "Type": "Compiled:Boolean",
+      "ValueUsage": "DesignTime",
+      "Value": true
+    },
+    {
+      "Id": "MethodBody",
+      "Type": "Compiled:String?",
+      "ValueUsage": "DesignTime",
+      "Value": "return (long)System.Math.Floor(number);"
+    },
+    {
+      "Id": "number",
+      "Type": "Compiled:Double",
+      "ValueUsage": "RuntimeRead",
+      "Value": {
+        "Expression": "TotalSeconds",
+        "CompiledExpression": "={0}",
+        "Type": "Compiled:Double"
+      },
+      "ValueType": "Linx.CSharpExpression?"
+    }
+  ],
+  "Result": "Compiled:Int64"
+}

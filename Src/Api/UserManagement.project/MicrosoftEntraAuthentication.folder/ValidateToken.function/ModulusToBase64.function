@@ -26,11 +26,11 @@
       "ValueUsage": "DesignTime",
       "Value": {
         "Id": "MI4l",
-        "Name": "MicrosoftEntraAuthentication.Base64UrlToBase64",
+        "Name": "MicrosoftEntraAuthentication.Base64URLToBase64",
         "Parameters": "Generated:T_0yaK?",
         "Result": "Compiled:String?",
         "IsValid": true,
-        "QualifiedPath": "FL:MicrosoftEntraAuthentication→PC:Base64UrlToBase64"
+        "QualifiedPath": "FL:MicrosoftEntraAuthentication→PC:Base64URLToBase64"
       },
       "ValueType": "Linx.ProcessReference?"
     }

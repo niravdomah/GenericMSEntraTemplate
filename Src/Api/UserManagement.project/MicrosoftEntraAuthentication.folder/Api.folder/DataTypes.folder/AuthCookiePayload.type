@@ -1,0 +1,26 @@
+{
+  "Id": "ydRi",
+  "Name": "AuthCookiePayload",
+  "Properties": [
+    {
+      "Id": "lsCV",
+      "Name": "v",
+      "Type": "Compiled:String?"
+    },
+    {
+      "Id": "tX0D",
+      "Name": "s",
+      "Type": "Compiled:String?"
+    },
+    {
+      "Id": "NpGQ",
+      "Name": "n",
+      "Type": "Compiled:String?"
+    },
+    {
+      "Id": "fmIl",
+      "Name": "exp",
+      "Type": "Compiled:Int64"
+    }
+  ]
+}

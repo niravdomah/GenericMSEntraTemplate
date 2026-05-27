@@ -36,12 +36,6 @@
     "Value": "http://localhost:3000/"
   },
   {
-    "Id": "PhDC",
-    "Name": "EntraCodeVerifier",
-    "Type": "Compiled:String?",
-    "Value": "ThisIsntRandomButItNeedsToBe43CharactersLong"
-  },
-  {
     "Id": "HkbJ",
     "Name": "JwtSecret",
     "Type": "Compiled:String?",
@@ -94,5 +88,17 @@
     "Name": "CORSOrigins",
     "Type": "Compiled:String?",
     "Value": "[\"http://localhost:3000\",\"http://localhost:10010\", \"https://login.microsoftonline.com\", \"http://localhost:10011\"]"
+  },
+  {
+    "Id": "qs6t",
+    "Name": "AuthCookieSecret",
+    "Type": "Compiled:String?",
+    "Secret": true
+  },
+  {
+    "Id": "7CAW",
+    "Name": "SecureCookie",
+    "Type": "Compiled:Boolean",
+    "Value": "False"
   }
 ]

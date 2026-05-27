@@ -1,0 +1,39 @@
+{
+  "Properties": [
+    {
+      "Id": "ParameterNameMapping",
+      "Type": "Compiled:System.Collections.Generic.IDictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib?",
+      "ValueUsage": "DesignTime",
+      "Value": {
+        "zWom": "Base64"
+      },
+      "ValueType": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib?"
+    },
+    {
+      "Id": "Process",
+      "Type": "Compiled:Linx.IProcessReference?",
+      "ValueUsage": "DesignTime",
+      "Value": {
+        "Id": "RkWp",
+        "Name": "MicrosoftEntraAuthentication.Base64ToBase64URL",
+        "Parameters": "Generated:T_9evn?",
+        "Result": "Compiled:String?",
+        "IsValid": true,
+        "QualifiedPath": "FL:MicrosoftEntraAuthentication→PC:Base64ToBase64URL"
+      },
+      "ValueType": "Linx.ProcessReference?"
+    },
+    {
+      "Id": "zWom",
+      "Type": "Compiled:String?",
+      "ValueUsage": "RuntimeRead",
+      "Value": {
+        "Expression": "GenerateChallengeHash",
+        "CompiledExpression": "={0}",
+        "Type": "Compiled:System.Collections.Generic.List`1[[System.Byte, System.Private.CoreLib]], System.Private.CoreLib?"
+      },
+      "ValueType": "Linx.CSharpExpression?"
+    }
+  ],
+  "Result": "Compiled:String?"
+}

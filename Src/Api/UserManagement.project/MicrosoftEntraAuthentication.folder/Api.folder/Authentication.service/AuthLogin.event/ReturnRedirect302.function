@@ -5,7 +5,7 @@
       "Type": "Generated:C_VDAN.Operations.AuthLogin.Result?",
       "ValueUsage": "RuntimeRead",
       "Value": {
-        "ParsedExpression": "{\"HttpContext\":{\"StatusCode\":302, \"Headers\":[{\"Name\":\"Location\", \"Value\":[{\"LinxExpression\":\"[PARSED]\"}]}]}}",
+        "ParsedExpression": "{\"HttpContext\":{\"StatusCode\":302, \"Headers\":[{\"Name\":\"Location\", \"Value\":[{\"LinxExpression\":\"[PARSED]\"}]},{\"Name\":\"Set-Cookie\", \"Value\":[{\"LinxExpression\":\"[PARSED]\"}]}]}}",
         "ExpressionPlaceholders": [
           {
             "typePath": [
@@ -17,6 +17,20 @@
             ],
             "expression": {
               "Expression": "LoginUri",
+              "CompiledExpression": "={0}",
+              "Type": "Compiled:String?"
+            }
+          },
+          {
+            "typePath": [
+              "HttpContext",
+              "Headers",
+              "[]",
+              "Value",
+              "[]"
+            ],
+            "expression": {
+              "Expression": "CreateAuthCookie",
               "CompiledExpression": "={0}",
               "Type": "Compiled:String?"
             }

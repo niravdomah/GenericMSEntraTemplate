@@ -1,0 +1,16 @@
+[
+  {
+    "Type": "Generated",
+    "Value": {
+      "Id": "T_rCw1",
+      "Properties": [
+        {
+          "Id": "rqSi",
+          "Name": "AuthCookiePayload",
+          "Type": "Custom:ydRi?",
+          "Access": "ReadWrite"
+        }
+      ]
+    }
+  }
+]

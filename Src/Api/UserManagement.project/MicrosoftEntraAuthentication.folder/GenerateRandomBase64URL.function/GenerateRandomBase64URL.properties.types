@@ -1,0 +1,16 @@
+[
+  {
+    "Type": "Generated",
+    "Value": {
+      "Id": "T_KnpF",
+      "Properties": [
+        {
+          "Id": "T4GQ",
+          "Name": "NumberOfBytes",
+          "Type": "Compiled:Int64",
+          "Access": "ReadWrite"
+        }
+      ]
+    }
+  }
+]

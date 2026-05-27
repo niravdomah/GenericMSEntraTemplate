@@ -1,0 +1,19 @@
+{
+  "Properties": [
+    {
+      "Id": "Value",
+      "Type": "Compiled:String?",
+      "ValueUsage": "RuntimeRead",
+      "Value": {
+        "Expression": "$.Parameters.Base64.Replace(\"+\", \"-\").Replace(\"/\", \"_\").Replace(\"=\", \"\")",
+        "CompiledExpression": "={0}.Replace(\"+\",\"-\").Replace(\"/\",\"_\").Replace(\"=\",\"\")",
+        "Type": "Compiled:String?"
+      },
+      "ValueType": "Linx.CSharpExpression?"
+    }
+  ],
+  "RuntimeCharacteristics": {
+    "IsTerminating": true,
+    "ExecutionPathExecution": "ZeroOrMore"
+  }
+}

@@ -11,8 +11,8 @@
       "Type": "Compiled:String?",
       "ValueUsage": "RuntimeRead",
       "Value": {
-        "Expression": "\"https://login.microsoftonline.com/{0}/oauth2/v2.0/authorize?client_id={1}&response_type=code&redirect_uri={2}&scope=openid%20profile%20email&response_mode=query&state={3}&code_challenge={4}&code_challenge_method=S256\".FormatWith($.Settings.MicrosoftTenantId, $.Settings.MicrosoftClientId, $.Settings.CallbackUri, State, CodeChallenge)",
-        "CompiledExpression": "=System.String.Format(\"https://login.microsoftonline.com/{{0}}/oauth2/v2.0/authorize?client_id={{1}}&response_type=code&redirect_uri={{2}}&scope=openid%20profile%20email&response_mode=query&state={{3}}&code_challenge={{4}}&code_challenge_method=S256\",{4},{3},{2},{1},{0})",
+        "Expression": "\"https://login.microsoftonline.com/{0}/oauth2/v2.0/authorize?client_id={1}&response_type=code&redirect_uri={2}&scope=openid%20profile%20email&response_mode=query&state={3}&code_challenge={4}&code_challenge_method=S256&nonce={5}\".FormatWith(\r\n$.Settings.MicrosoftTenantId,\r\n$.Settings.MicrosoftClientId,\r\n$.Settings.CallbackUri,\r\nState,\r\nCodeChallenge,\r\nNonce\r\n)",
+        "CompiledExpression": "=System.String.Format(\"https://login.microsoftonline.com/{{0}}/oauth2/v2.0/authorize?client_id={{1}}&response_type=code&redirect_uri={{2}}&scope=openid%20profile%20email&response_mode=query&state={{3}}&code_challenge={{4}}&code_challenge_method=S256&nonce={{5}}\",{5},{4},{3},{2},{1},{0})",
         "Type": "Compiled:String?"
       },
       "ValueType": "Linx.CSharpExpression?"

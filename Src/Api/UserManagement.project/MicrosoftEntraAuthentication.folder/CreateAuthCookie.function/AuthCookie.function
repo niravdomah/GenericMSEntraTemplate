@@ -1,0 +1,23 @@
+{
+  "Properties": [
+    {
+      "Id": "Nullable",
+      "Type": "Compiled:Boolean",
+      "ValueUsage": "DesignTime",
+      "Value": true
+    },
+    {
+      "Id": "Value",
+      "Type": "Compiled:String?",
+      "ValueUsage": "RuntimeRead",
+      "Value": {
+        "Expression": "\"auth={0}; Path=/; HttpOnly; {1}SameSite=Lax; Max-Age=600\".FormatWith(\r\nAuthCookieValue,\r\n$.Settings.SecureCookie ? \"Secure; \" : \"\"\r\n)",
+        "CompiledExpression": "=System.String.Format(\"auth={{0}}; Path=/; HttpOnly; {{1}}SameSite=Lax; Max-Age=600\",{1},{0}?\"Secure; \":\"\")",
+        "Type": "Compiled:String?"
+      },
+      "ValueType": "Linx.CSharpExpression?"
+    }
+  ],
+  "Result": "Compiled:String?",
+  "Version": "1"
+}

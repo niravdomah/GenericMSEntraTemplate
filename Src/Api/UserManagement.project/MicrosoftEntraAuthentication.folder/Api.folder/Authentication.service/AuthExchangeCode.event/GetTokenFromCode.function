@@ -168,7 +168,7 @@
               "Value"
             ],
             "expression": {
-              "Expression": "$.Settings.EntraCodeVerifier",
+              "Expression": "ValidateAuthCookie.v",
               "CompiledExpression": "={0}",
               "Type": "Compiled:String?"
             }

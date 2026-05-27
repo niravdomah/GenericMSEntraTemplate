@@ -18,7 +18,7 @@
       "Type": "Custom:Oxji?",
       "ValueUsage": "RuntimeRead",
       "Value": {
-        "Expression": "Base64UrlToBase64.ToBytesFromBase64().ToString(\"UTF8\")",
+        "Expression": "Base64URLToBase64.ToBytesFromBase64().ToString(\"UTF8\")",
         "CompiledExpression": "=System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String({0}).ToList().ToArray())",
         "Type": "Compiled:String?"
       },

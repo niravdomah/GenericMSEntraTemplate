@@ -1,0 +1,33 @@
+{
+  "Properties": [
+    {
+      "Id": "Data",
+      "Type": "Compiled:Twenty57.Linx.Plugins.Cryptography.Shared.Common.Binary, Twenty57.Linx.Plugins.Cryptography.Shared?",
+      "ValueUsage": "RuntimeRead",
+      "Value": {
+        "Expression": "PayloadBase64",
+        "CompiledExpression": "={0}",
+        "Type": "Compiled:String?"
+      },
+      "ValueType": "Linx.CSharpExpression?"
+    },
+    {
+      "Id": "Hash algorithm",
+      "Type": "Compiled:Twenty57.Linx.Plugins.Cryptography.Shared.GenerateHmac.HmacAlgorithm, Twenty57.Linx.Plugins.Cryptography.Shared",
+      "ValueUsage": "DesignTime",
+      "Value": "HMACSHA256"
+    },
+    {
+      "Id": "Key",
+      "Type": "Compiled:Twenty57.Linx.Plugins.Cryptography.Shared.Common.Binary, Twenty57.Linx.Plugins.Cryptography.Shared?",
+      "ValueUsage": "RuntimeRead",
+      "Value": {
+        "Expression": "$.Settings.AuthCookieSecret",
+        "CompiledExpression": "={0}",
+        "Type": "Compiled:String?"
+      },
+      "ValueType": "Linx.CSharpExpression?"
+    }
+  ],
+  "Result": "Compiled:Twenty57.Linx.Plugins.Cryptography.Shared.Common.Binary, Twenty57.Linx.Plugins.Cryptography.Shared?"
+}

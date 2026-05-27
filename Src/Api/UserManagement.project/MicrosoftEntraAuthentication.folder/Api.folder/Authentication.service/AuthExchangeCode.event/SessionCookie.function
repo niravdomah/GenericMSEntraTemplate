@@ -1,0 +1,23 @@
+{
+  "Properties": [
+    {
+      "Id": "Nullable",
+      "Type": "Compiled:Boolean",
+      "ValueUsage": "DesignTime",
+      "Value": true
+    },
+    {
+      "Id": "Value",
+      "Type": "Compiled:String?",
+      "ValueUsage": "RuntimeRead",
+      "Value": {
+        "Expression": "\"session={0}; Path=/; HttpOnly; {1}SameSite=Strict; Expires={2}\".FormatWith(\r\n\tCreateSessionToken,\r\n\t$.Settings.SecureCookie ? \"Secure; \" : \"\",\r\n\t$.System.CurrentDateTime.AddMinutes($.Settings.SessionExpiryMinutes).ToUniversalTime().ToString(\"ddd, dd MMM yyyy HH:mm:ss 'GMT'\")\r\n)",
+        "CompiledExpression": "=System.String.Format(\"session={{0}}; Path=/; HttpOnly; {{1}}SameSite=Strict; Expires={{2}}\",{3},{2}?\"Secure; \":\"\",{1}.AddMinutes({0}).ToUniversalTime().ToString(\"ddd, dd MMM yyyy HH:mm:ss 'GMT'\"))",
+        "Type": "Compiled:String?"
+      },
+      "ValueType": "Linx.CSharpExpression?"
+    }
+  ],
+  "Result": "Compiled:String?",
+  "Version": "1"
+}

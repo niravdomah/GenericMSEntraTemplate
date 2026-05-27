@@ -1,0 +1,16 @@
+[
+  {
+    "Type": "Generated",
+    "Value": {
+      "Id": "T_3AHe",
+      "Properties": [
+        {
+          "Id": "PP9Y",
+          "Name": "UnixTimeUTC",
+          "Type": "Compiled:Int64",
+          "Access": "ReadWrite"
+        }
+      ]
+    }
+  }
+]
