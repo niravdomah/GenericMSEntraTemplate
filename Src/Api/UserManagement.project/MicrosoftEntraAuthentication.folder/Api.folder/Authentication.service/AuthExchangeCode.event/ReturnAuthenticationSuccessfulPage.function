@@ -5,7 +5,7 @@
       "Type": "Generated:C_VDAN.Operations.AuthExchangeCode.Result?",
       "ValueUsage": "RuntimeRead",
       "Value": {
-        "ParsedExpression": "{\"HttpContext\":{\"StatusCode\":302, \"Headers\":[{\"Name\":\"Location\", \"Value\":[{\"LinxExpression\":\"[PARSED]\"}]},{\"Name\":\"Set-Cookie\", \"Value\":[{\"LinxExpression\":\"[PARSED]\"}]},{\"Name\":\"Set-Cookie\", \"Value\":[\"auth=; Path=/; Expires=Thu, 01 Jan 1970 00:00:00 GMT\"]}]}}",
+        "ParsedExpression": "{\"HttpContext\":{\"StatusCode\":302, \"Headers\":[{\"Name\":\"Location\", \"Value\":[{\"LinxExpression\":\"[PARSED]\"}]},{\"Name\":\"Set-Cookie\", \"Value\":[{\"LinxExpression\":\"[PARSED]\"},\"auth=; Path=/; Expires=Thu, 01 Jan 1970 00:00:00 GMT\"]}]}}",
         "ExpressionPlaceholders": [
           {
             "typePath": [
