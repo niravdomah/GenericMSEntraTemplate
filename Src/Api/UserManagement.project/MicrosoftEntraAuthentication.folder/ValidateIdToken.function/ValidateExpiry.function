@@ -1,39 +1,38 @@
 {
   "Properties": [
     {
-      "Id": "kFBq",
-      "Type": "Compiled:String?",
-      "ValueUsage": "RuntimeRead",
-      "Value": {
-        "Expression": "GetTokenFromCode.ResponseBody.id_token",
-        "CompiledExpression": "={0}",
-        "Type": "Compiled:String?"
-      },
-      "ValueType": "Linx.CSharpExpression?"
-    },
-    {
       "Id": "ParameterNameMapping",
       "Type": "Compiled:System.Collections.Generic.IDictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib?",
       "ValueUsage": "DesignTime",
       "Value": {
-        "kFBq": "Token"
+        "PP9Y": "UnixTimeUTC"
       },
       "ValueType": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib?"
+    },
+    {
+      "Id": "PP9Y",
+      "Type": "Compiled:Int64",
+      "ValueUsage": "RuntimeRead",
+      "Value": {
+        "Expression": "JWTPayload.exp",
+        "CompiledExpression": "={0}",
+        "Type": "Compiled:Int64"
+      },
+      "ValueType": "Linx.CSharpExpression?"
     },
     {
       "Id": "Process",
       "Type": "Compiled:Linx.IProcessReference?",
       "ValueUsage": "DesignTime",
       "Value": {
-        "Id": "Bj3E",
-        "Name": "MicrosoftEntraAuthentication.ValidateIdToken",
-        "Parameters": "Generated:T_U37n?",
-        "Result": "Custom:4CsL?",
+        "Id": "foyh",
+        "Name": "MicrosoftEntraAuthentication.ValidateExpiry",
+        "Parameters": "Generated:T_3AHe?",
+        "Result": null,
         "IsValid": true,
-        "QualifiedPath": "FL:MicrosoftEntraAuthentication→PC:ValidateIdToken"
+        "QualifiedPath": "FL:MicrosoftEntraAuthentication→PC:ValidateExpiry"
       },
       "ValueType": "Linx.ProcessReference?"
     }
-  ],
-  "Result": "Custom:4CsL?"
+  ]
 }

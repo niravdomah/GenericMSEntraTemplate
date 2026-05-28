@@ -5,9 +5,9 @@
       "Type": "Custom:4CsL?",
       "ValueUsage": "RuntimeRead",
       "Value": {
-        "Expression": "VerifyJWT.Payload",
+        "Expression": "JWTPayload",
         "CompiledExpression": "={0}",
-        "Type": "Compiled:String?"
+        "Type": "Custom:4CsL?"
       },
       "ValueType": "Linx.CSharpExpression?"
     }
